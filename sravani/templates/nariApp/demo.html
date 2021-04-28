@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="
+" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static "css/demo.css"%}">
+    <title></title>
+  </head>
+  <body>
+    {% load hello%}
+<h1>hello demo</h1>
+{{name|trunc}}
+{{num}}
+<img src="{% static "images/seethaRama.jpg"%}" alt="">
+{% block body_block %}
+
+{% endblock %}
+  </body>
+</html>
